@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let scrollAmount = 0;
 
     window.addEventListener("scroll", toggleBackToTopVisibility);
+    backToTop.addEventListener("click", scrollToTop);
+
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', smoothScrollAnchor);
